@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+:root {
+    --wine-red: #C7375F;
+    --bright-red: #D42D2F;
+    --dark-green: #344D2F;
+    --light-green: #77A047;
+    --gold: #FAC57D;
+    --snow: #F0F4F7;
+  }
+  
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: var(--snow);
+    background-image: url(./pexels-andrea-piacquadio-1050244.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.561);
+    margin-bottom: 2rem;
+}
+
+.add {
+    background-color: var(--snow);
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.add > * {
+    padding: 0.5rem;
+}
+
+.add input {
+    width: 300px;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+    background-color: var(--snow);
+    border: 1px solid rgba(0, 0, 0, 0.596);
+}
+
+.add button {
+    font-size: 1rem;
+    background-color: #77A047;
+    color: white;
+    font-weight: 800;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.item-list {
+    color: var(--dark-green);
+    width: 24.5rem;
+    min-height: 200px;
+    background: var(--snow);
+    padding: 1em 2em;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.item-list button {
+    /* padding: .3rem; */
+    font-size: 1rem;
+    background-color: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.item-list div {
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.item-list label {
+    width: 100%;
+    display: flex;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.item-list input {
+    padding: .3rem;
+    transform: translateY(65%);
+    margin-right: .5rem;
+}
+
+input[type=checkbox]:checked + label.strikethrough {
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+
+
+
+
